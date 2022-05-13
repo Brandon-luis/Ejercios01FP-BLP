@@ -9,13 +9,15 @@ public class Pregunta04BLPC {
     static Scanner lt=new Scanner(System.in);
     public static void pregunta03BLPC() {
         //Variables
-        int n1, n2;
+        double n1, n2, p, r;
         System.out.println("Ingrese el primer valor");
         n1=lt.nextInt();
         System.out.println("Ingrese el segundo valor (Para hallar el modulo 2do valor no cuenta)");
         n2=lt.nextInt();
         System.out.println("Ingrese el signo");
         char operador=lt.next().charAt(0);
+        p=Math.pow(n1, n1);
+        r=Math.sqrt(n1);
 
         //Proceso 
 
@@ -24,8 +26,8 @@ public class Pregunta04BLPC {
             case '-': System.out.println(n1-n2);  break;
             case '*': System.out.println(n1*n2);  break;
             case '/': System.out.println(n1/n2);  break;
-            case 'p':Math.pow(n1, n2);break;
-            case 'R':Math.pow(n1,(1/n2));break;
+            case 'p': System.out.println(+p);  break;
+            case 'R': System.out.println(+r);  break;
             case '%': System.out.println(n1%2);  break;
            default: break;
         }
@@ -33,7 +35,7 @@ public class Pregunta04BLPC {
     public static void pregunta02BLPC() {
         //Variables
        
-        double mb, descuento=0, IT;
+        double mb, descuento, IT;
 
         System.out.println("Ingresar Monto Base");
         mb=lt.nextDouble();
@@ -61,12 +63,13 @@ public class Pregunta04BLPC {
         } else if(IGV<=1000 && IGV>500){
             IT = (mb- IGV*2/100);
         } else {
-            IT = (mb - IGV);
+            IT = (mb + IGV - descuento);
         }
         
         //Datos de Salida
+        System.out.println("El descuento es:"+descuento);
         System.out.println("El importe Total es:"+IT);
-        
+        System.out.println("El IGV:"+MBIGV);
     }
     public static void pregunta01BLPC() {
         //Variables
