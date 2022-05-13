@@ -125,14 +125,14 @@ public class Pregunta04BLPC {
           } else if(g=="F"){
               System.out.println("Eres una mujer");
           }
-          if (edad>70) {
-              c="Le corresponde la vacuna tipo C";
+          if (edad>69) {
+              c="Se le aplica la vacuna C";
+          } else if(edad>16 && edad<69){
+              c="Se le aplica  la vacuna  B"; 
           } else if(edad>16 && edad<70){
-              c="Le corresponde la vacuna tipo B"; 
-          } else if(edad>16 && edad<70){
-              c="Le corresponde la vacuna tipo C";
+              c="Se le aplica  la vacuna  A";
           } else {
-              c="Le corresponde la vacuna tipo A";
+              c="Se le aplica  la vacuna A";
           }    
           //Datos de Salida 
           System.out.println(c);
