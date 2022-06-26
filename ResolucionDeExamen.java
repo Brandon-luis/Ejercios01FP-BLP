@@ -1,0 +1,8 @@
+
+/**
+ * ResolucionDeExamen
+ */
+public class ResolucionDeExamen {
+
+    
+}
