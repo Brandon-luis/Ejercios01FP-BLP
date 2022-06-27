@@ -1,4 +1,4 @@
-package ExamenBLPC.src.main.java.pe.edu.upeu.blcp;
+package pe.edu.upeu.blcp;
 
 public class App {
     public static void main(String[] args) {

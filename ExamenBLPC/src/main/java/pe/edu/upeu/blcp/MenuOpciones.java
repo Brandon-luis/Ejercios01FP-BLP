@@ -1,8 +1,8 @@
-package ExamenBLPC.src.main.java.pe.edu.upeu.blcp;
+package pe.edu.upeu.blcp;
 
 
-import ExamenBLPC.src.main.java.pe.edu.upeu.blcp.examen.ResolucionDeExamen;
-import ExamenBLPC.src.main.java.pe.edu.upeu.blcp.utils.LeerTeclado;
+import pe.edu.upeu.blcp.examen.ResolucionDeExamen;
+import pe.edu.upeu.blcp.utils.LeerTeclado;
 
 public class MenuOpciones {
 
@@ -11,7 +11,7 @@ public class MenuOpciones {
 
     public void menuPrincipal() {
         System.out.println("------------------------------------Elija una Opción------------------------------");
-        int opciones = 1;
+        int opciones = 4;
         String menu = "";
         menu += "1. ImpuestoVehiculos\n";
         menu += "2. Xen-->*\n";

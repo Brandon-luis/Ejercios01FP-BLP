@@ -1,4 +1,4 @@
-package ExamenBLPC.src.main.java.pe.edu.upeu.blcp.utils;
+package pe.edu.upeu.blcp.utils;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

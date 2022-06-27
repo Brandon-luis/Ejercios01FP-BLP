@@ -1,4 +1,4 @@
-package ExamenBLPC.src.main.java.pe.edu.upeu.blcp.examen;
+package pe.edu.upeu.blcp.examen;
 import java.util.Scanner;
 public class ResolucionDeExamen {
     static int n=5;
@@ -19,7 +19,7 @@ public class ResolucionDeExamen {
                 System.out.println("Ingres el precio del Vehiculo con clave "+claveV+":");
                 precioVC1=leerT.nextDouble();
                 }
-                impVC1=precioVC1*0.10;
+                impVC1=(precioVC1*12)/100;
             }else if (claveV.equals("VC2")){
                 System.out.println("Ingres cantidad de Vehiculo con clave "+claveV+":");
                 cantVC2=cantVC2+leerT.nextInt();
@@ -27,7 +27,7 @@ public class ResolucionDeExamen {
                 System.out.println("Ingres el precio del Vehiculo con clave "+claveV+":");
                 precioVC2=leerT.nextDouble();
                 }
-                impVC2=precioVC2*0.07;                
+                impVC2=(precioVC2*8)/100;                
             }else if(claveV.equals("VC3")){
                 System.out.println("Ingres cantidad de Vehiculo con clave "+claveV+":");
                 cantVC3=cantVC3+leerT.nextInt();
@@ -35,7 +35,7 @@ public class ResolucionDeExamen {
                 System.out.println("Ingres el precio del Vehiculo con clave "+claveV+":");
                 precioVC3=leerT.nextDouble();
                 }
-                impVC3=precioVC3*0.05;   
+                impVC3=(precioVC3*5)/100;   
             }else{ System.out.println("La clave de vehiculo es incorrecto"); }
             System.out.println("Hay mas vehiculos?: S=SI, N=NO");
             hayMas=String.valueOf(leerT.next().toUpperCase().charAt(0));            
@@ -74,20 +74,23 @@ public class ResolucionDeExamen {
 
     public void preguntaexamen04BLCP() {
         
-            System.out.println("n Primeros Numeros Perfectos: ");
-            int i, f;
-            int suma = 0;
-            for(i = 1 ; i <= 10000 ; i++){      
-                for( f = 1 ; f < i ; f++ ){ if( i % f == 0 ){ suma = suma + f; } }
-                 if(i == suma){ System.out.println(i); }
-         }
+        int i, j;
+        int suma;
+        System.out.println("Primeros Numeros Perfectos: ");
+        for(i=1;i <= 10000;i++){      
+            suma = 0;
+            for(j = 1;j < i;j++){                          
+                 if(i % j==0){ suma = suma + j; }
+            }
+          if(i == suma){ System.out.println(i); }
+        }
     }
 
     public void preguntaexamen05BLCP() {
         Scanner leert= new Scanner(System.in);
         int n;
         do {
-            System.out.println("INTRODUZCA UN NUMERO MAYOR QUE POSITIVO MAYOR A 0: ");
+            System.out.println("INTRODUZCA UN NUMERO POSITIVO : ");
             n = leert.nextInt();
         } while (n < 0);
         System.out.println("---------");
